@@ -4,8 +4,19 @@
 
   <body>
 
-    <form action="login" method="get">
-      <input name="password">
+  <h1>Sign up </h1>
+    <form action="/user" method="post">
+      <input type="text" name="username" placeholder="Your Username">
+      <input name="password" placeholder="Your Password">
+      <input name="confirm" placeholder="Confirm Password">
+      <button>Submit</button>
+    </form>
+
+  <h1>Sign in</h1>
+    <form action="/session" method="post">
+      <input type="text" name="username" placeholder="Your Username">
+      <input type="text" name="password" placeholder="Your Password">
+      <button>Sign in</button>
     </form>
 
   </body>
